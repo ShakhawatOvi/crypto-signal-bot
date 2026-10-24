@@ -18,7 +18,7 @@ COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY", "").strip()  # optional, free
 MY_HOLDINGS = [s.strip().upper() for s in os.getenv("MY_HOLDINGS", "").split(",") if s.strip()]
 
 # --------------------------------------------------------------- universe ---
-TOP_N_COINS = 50          # how many coins to scan (by market cap, after filters)
+TOP_N_COINS = 30        # how many coins to scan (by market cap, after filters)
 QUOTE = "USDT"            # Binance quote currency you trade against
 
 # Stablecoins, wrapped / staked copies and other tokens that make no sense
@@ -44,11 +44,11 @@ H4_CANDLES = 200
 WEIGHTS = {
     "technical": 0.50,
     "fundamental": 0.15,
-    "sentiment": 0.20,
-    "events": 0.15,
+    "sentiment": 0.15,
+    "events": 0.20,
 }
 
-BUY_SCORE = 40            # final score needed for a BUY alert
+BUY_SCORE = 50            # final score needed for a BUY alert
 MIN_TECH_FOR_BUY = 0.25   # ...and the chart itself must be at least this bullish
 EXIT_SCORE = -10          # an open BUY gets a SELL/exit alert below this
 STRONG_SELL_SCORE = -40   # coins in MY_HOLDINGS get a warning below this
@@ -58,8 +58,8 @@ REBUY_COOLDOWN_DAYS = 3   # don't re-signal a coin right after exiting it
 MAX_HOLD_DAYS = 30        # swing trade "time stop"
 
 # Risk levels suggested in each BUY alert (based on daily ATR = average daily range)
-STOP_ATR_MULT = 2.0       # stop-loss = entry - 2 x ATR
-TARGET1_R = 1.5           # first target = entry + 1.5 x risk
+STOP_ATR_MULT = 2.5       # stop-loss = entry - 2 x ATR
+TARGET1_R = 1.8           # first target = entry + 1.5 x risk
 TARGET2_R = 3.0           # second target = entry + 3 x risk
 RISK_PER_TRADE_PCT = 1.0  # shown as advice: risk at most 1% of capital per trade
 
