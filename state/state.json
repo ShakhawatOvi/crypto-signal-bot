@@ -7,7 +7,7 @@
       "t2": 6.761593990164221e-06,
       "t1_hit": false,
       "opened": "2026-10-23T15:05:06+00:00",
-      "last_check": "2026-10-28T22:31:15+00:00",
+      "last_check": "2026-10-29T05:41:55+00:00",
       "score": 48.8
     }
   },
@@ -21,7 +21,7 @@
   "holding_alerts": {},
   "history": [],
   "last_update_id": 869518769,
-  "last_summary_date": "2026-10-28",
+  "last_summary_date": "2026-10-29",
   "env_holdings_added": [],
-  "last_run": "2026-10-28T22:31:15+00:00"
+  "last_run": "2026-10-29T05:41:55+00:00"
 }
